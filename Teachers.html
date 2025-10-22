@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Teachers </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+    body{
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color:#fff;
+      min-height:100vh;
+    }
+    header{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+    header h1{font-size:26px; font-weight:700;}
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:600;
+      transition: color 0.3s;
+    }
+    nav a:hover{color:#fbbf24;}
+
+    .page-title{
+      text-align:center;
+      font-size:36px;
+      margin:40px 0 20px 0;
+    }
+
+    .teachers-container{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+      padding: 20px 40px 60px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .teacher-card{
+      background: rgba(255,255,255,0.1);
+      padding:20px;
+      border-radius:20px;
+      text-align:center;
+      transition:transform 0.3s, background 0.3s;
+    }
+    .teacher-card:hover{
+      transform:translateY(-5px);
+      background: rgba(255,255,255,0.2);
+    }
+    .teacher-card img{
+      width:120px;
+      height:120px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:15px;
+      border:3px solid #fff;
+    }
+    .teacher-name{font-size:20px; font-weight:700; margin-bottom:5px;}
+    .teacher-subject{font-size:16px; color:#fbbf24; margin-bottom:10px;}
+    .teacher-bio{font-size:14px; color:#e0e7ff;}
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:rgba(0,0,0,0.3);
+    }
+
+    @media(max-width: 768px){
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h2{
+    font-size: 28px;
+  }
+
+  .management-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .management-card{
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RED ROSE SENIOR SECONDARY SCHOOL</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="contect.html">Contact</a>
+    <a href="Teachers.html">Teachers</a>
+  </nav>
+</header>
+
+<h2 class="page-title">Our Dedicated Teachers 👩‍🏫👨‍🏫</h2>
+
+<section class="teachers-container">
+  <div class="teacher-card">
+    <img src="IMAGES/Instagram - Google Chrome 10_7_2025 7_12_16 PM (1).png" alt="Teacher 1">
+    <div class="teacher-name">Mr. Manoj Kumar</div>
+    <div class="teacher-subject">Mathematics</div>
+    <div class="teacher-bio">10+ years of experience in making maths fun and easy for students.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Instagram - Google Chrome 10_7_2025 7_12_16 PM.png" alt="Teacher 2">
+    <div class="teacher-name">Mr. Vishnu vidawad</div>
+    <div class="teacher-subject">Science</div>
+    <div class="teacher-bio">Dedicated to inspiring curiosity through experiments and projects.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Capture.PNG" alt="Teacher 3">
+    <div class="teacher-name">Mr. Usman </div>
+    <div class="teacher-subject">English</div>
+    <div class="teacher-bio">Passionate about building strong language skills and confidence.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/WhatsApp 10_7_2025 8_28_25 PM.png" alt="Teacher 4">
+    <div class="teacher-name">Mr. Shaban</div>
+    <div class="teacher-subject">Social Science</div>
+    <div class="teacher-bio">Encourages students to explore history and geography with enthusiasm.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Capture.PNG" alt="Teacher 4">
+    <div class="teacher-name">Mr. Asif</div>
+    <div class="teacher-subject">Urdu and dinyat</div>
+    <div class="teacher-bio">lot of knowlage of urdu and dinyat.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Capture.PNG" alt="Teacher 4">
+    <div class="teacher-name">Mr. Mulchan </div>
+    <div class="teacher-subject">Hindi</div>
+    <div class="teacher-bio">Passionate about building strong language skills and confidence.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Capture.PNG" alt="Teacher 4">
+    <div class="teacher-name">Mr. jaideep</div>
+    <div class="teacher-subject">geography-senior</div>
+    <div class="teacher-bio">Encourages students to explore geography with enthusiasm.</div>
+  </div>
+
+  <div class="teacher-card">
+    <img src="IMAGES/Capture.PNG" alt="Teacher 4">
+    <div class="teacher-name">Mrs. Muskan</div>
+    <div class="teacher-subject">Hindi-junior</div>
+    <div class="teacher-bio">Passionate about building strong language skills and confidence.</div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 RED ROSE SENIOR SECONDARY. All rights reserved.| Contact: info@RED ROSE SENIOR SECOUNDRY.edu
+</footer>
+
+</body>
+</html>

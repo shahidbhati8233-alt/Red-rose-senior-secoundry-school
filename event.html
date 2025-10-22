@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=mobile and pc both, initial-scale=1.0">
+<title>School Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+  body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color:#fff;
+    min-height:100vh;
+  }
+  header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+  }
+  header h1{font-size:28px; font-weight:700;}
+  nav a{
+    color:#fff; text-decoration:none; margin-left:20px; font-weight:600;
+  }
+  nav a:hover{color:#fbbf24;}
+  
+  .hero{
+    text-align:center;
+    padding:60px 20px;
+  }
+  .hero h2{font-size:36px; margin-bottom:10px;}
+  .hero p{font-size:18px; color:#e0e7ff;}
+  
+  .events{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:40px 20px;
+  }
+  .event-card{
+    background: rgba(0,0,0,0.3);
+    border-radius:16px;
+    width:250px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .event-card:hover{
+    transform: translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+  }
+  .event-card img{width:100%; height:200px; object-fit:cover;}
+  .event-card h3{margin:10px; font-size:18px;}
+  .event-card p{margin:0 10px 10px 10px; font-size:14px; color:#e0e7ff;}
+  
+  footer{
+    text-align:center;
+    padding:20px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    font-size:14px;
+  }
+
+ @media(max-width: 768px){
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h2{
+    font-size: 28px;
+  }
+
+  .management-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .management-card{
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>RED ROSE SENIOR SECOUNDRY SCHOOL</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="contect.html">Contact</a>
+    <a href="Teachers.html">Teachers</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>School Events</h2>
+  <p>Explore all the latest seminars, sports, and cultural events in our academy.</p>
+</section>
+
+<section class="events">
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.03.55_10f0dbe7.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.03.55_1297f0bb.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.29_bc763c64.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+    <p>Date: 15th Oct 2025</p>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.32_5019f2d4.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.32_d266d239.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.33_291c52ba.jpg" alt="Annual function">
+    <h3>Annual function 2024-2025</h3>
+  </div>
+  <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.34_2ad3cf70.jpg" alt="Sports Day">
+    <h3>TELENT HUNT Quiz Competition</h3>
+  </div>
+   <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-05 at 15.48.34_af1b084c.jpg" alt="Music Fest">
+    <h3>TELENT HUNT Quiz Competition</h3>
+  </div>
+ <div class="event-card">
+    <img src="IMAGES/WhatsApp Image 2025-10-04 at 13.16.46_f8bf78d6.jpg" alt="Art Competition">
+    <h3>Art Competition</h3>
+    <p>Date: 30th Oct 2025</p>
+  </div>
+</section>
+
+<footer id="contact">
+  &copy; 2025 RED ROSE SENIOR SECOUNDRY SCHOOL. All rights reserved. | Contact: info@RED ROSE SENIOR SECOUNDRY.edu
+</footer>
+
+</body>
+</html>

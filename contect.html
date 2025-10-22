@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif;}
+  body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color:#fff;
+    min-height:100vh;
+  }
+  header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+  }
+  header h1{font-size:28px; font-weight:700;}
+  nav a{
+    color:#fff; text-decoration:none; margin-left:20px; font-weight:600;
+  }
+  nav a:hover{color:#fbbf24;}
+  
+  .hero{
+    text-align:center;
+    padding:60px 20px;
+  }
+  .hero h2{font-size:36px; margin-bottom:10px;}
+  .hero p{font-size:18px; color:#e0e7ff;}
+  
+  .contact-form{
+    max-width:500px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background: rgba(0,0,0,0.3);
+    padding:30px;
+    border-radius:16px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button{
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    font-size:15px;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    width:100%;
+  }
+  .contact-form textarea{
+    resize:none;
+    min-height:120px;
+  }
+  .contact-form button{
+    background: #25D366; /* WhatsApp green */
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    transition: transform 0.2s;
+  }
+  .contact-form button:hover{
+    transform: translateY(-2px);
+  }
+
+  footer{
+    text-align:center;
+    padding:20px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    font-size:14px;
+  }
+
+ @media(max-width: 768px){
+  header{
+    flex-direction: column;
+    text-align: left;
+  }
+
+  nav a{
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h2{
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>RED ROSE SENIOR SECOUNDRY SCHOOL</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="Teachers.html">Teachers</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Send us a message below.</p>
+</section>
+
+<section>
+  <form class="contact-form" id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Write your message..." required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 RED ROSE SENIOR SECOUNDRY SCHOOL. All rights reserved. | Email: info@REDROSE.edu
+</footer>
+
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
+
+    const phone = "8233809870"; // <-- Replace with your WhatsApp number
+    const text = `Hello! My name is ${name} 
+                  Email:${email} 
+                  Subject: ${subject} 
+                  Message: ${message}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+
+</body>
+</html>
